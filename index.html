@@ -68,47 +68,45 @@
         <!-- Repeat for more projects -->
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming</li>
-            <li>Web Development</li>
-            <li>DataBase Management</li>
-            <!-- Add more skills as needed -->
-        </ul>
+    <section class="portfolio">
+        <h2>More</h2>
+        <div class="port">
+            <div class="project">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming</li>
+                    <li>Web Development</li>
+                    <li>Database Management</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>JavaScript</li>
+                    <li>Node. Js</li>
+                    <li>Html</li>
+                </ul>
+            </div>
+            <div class="project">
+                <h3>Experience</h3>
+                <h4>Internship at Power Learn Project</h4>
+                <p>Involved in web design and programming.</p>
+                <p><strong>Duration:</strong> Feb 2024 - July 2024</p><br>
+    
+                <h4>Internship at Mombasa Law Courts</h4>
+                <p>Worked as a court clerk.</p>
+                <p><strong>Duration:</strong> Jan 2023 - June 2023</p><br>
+            </div>
+            <div class="project">
+                <h3>Education</h3>
+                <h4>Software Development</h4>
+                <p>Power Learn Project</p>
+                <p><strong>Duration:</strong> February 2024 - June 2024</p><br>
+    
+                <h4>Bachelor Degree in Criminology</h4>
+                <p>Africa Nazarene University</p>
+                <p><strong>Duration:</strong> 2018 - 2023</p>
+            </div>
+        </div>
     </section>
-
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Internship</h3>
-            <p>Involved in web design and programming .</p>
-            <p><strong>Duration:</strong> Feb 2024 - July 2024</p>
-        </div>
-
-        <div class="job">
-            <h3>Internship at Mombasa Law Courts</h3>
-            <p>Worked as a court clerk .</p>
-            <p><strong>Duration:</strong> Jan 2023 - June 2023</p>
-        </div>
-        <!-- Repeat for more job experiences -->
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <div class="education-entry">
-            <h3>Software Development</h3>
-            <p>Power Learn Project</p>
-            <p><strong>Duration:</strong> February 2024 - June 2024</p>
-        </div>
-
-        <div class="education-entry">
-            <h3>Bachelor Degree Criminology</h3>
-            <p>Africa Nazarene University</p>
-            <p><strong>Duration:</strong> 2028 - 2023</p>
-        </div>
-        <!-- Repeat for more educational entries -->
-    </section>
+    
 
     <footer>
         <p>&copy; 2024 Juma Mwinga. All rights reserved.</p>
@@ -119,3 +117,33 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+.home-content h2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes manipActiveHover {
+    100% {
+        pointer-events: auto;
+    }
+}
